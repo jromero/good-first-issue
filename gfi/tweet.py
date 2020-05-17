@@ -75,9 +75,9 @@ class GoodFirstTwitter:
     def tweet(self, repo):
         try:
             status = (
-                f"{ repo['name'] } needs your help. Start contributing to "
-                f" issues marked #goodfirstissues here. {repo['url']} "
-                f" #oss #{repo['language']}"
+                f"{ repo['name'] } needs your help. Start contributing to"
+                f" issues marked #goodfirstissues {repo['url']} #oss"
+                f" #{repo['language']}"
             )
             self.twitter.update_status(status=status)
         except Exception:
